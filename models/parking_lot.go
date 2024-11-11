@@ -40,7 +40,7 @@ func (pl *ParkingLot) ParkVehicle(vehicleID, parkTime int) bool {
     if pl.Occupied < pl.Capacity {
         pl.Occupied++
         pl.OccupiedSlots = append(pl.OccupiedSlots, VehicleSlot{VehicleID: vehicleID, ParkTime: parkTime})
-        pl.NotifyObservers() // Notifica a los observadores sobre el nuevo estado
+        pl.NotifyObservers() 
         return true
     }
     return false
@@ -58,7 +58,6 @@ func (pl *ParkingLot) LeaveVehicle(vehicleID int) {
             break
         }
     }
-    pl.NotifyObservers() // Notifica a los observadores sobre el nuevo estado
-    // Envía señal al canal de notificación indicando que un espacio ha sido liberado
+    pl.NotifyObservers() 
     pl.NotifyChannel <- struct{}{}
 }
