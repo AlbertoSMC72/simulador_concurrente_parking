@@ -7,9 +7,11 @@ El simulador permite observar cómo múltiples vehículos intentan estacionarse 
 ***Características Principales***
 Concurrencia con Goroutines: Cada vehículo se representa como una goroutine independiente, simulando su llegada, estacionamiento y salida.
 
-***Comunicación Segura con Canales:*** Se utilizan canales para coordinar la asignación y liberación de espacios de estacionamiento entre las goroutines de los vehículos.
+***Comunicación Segura con Canales:*** 
+Se utilizan canales para coordinar la asignación y liberación de espacios de estacionamiento entre las goroutines de los vehículos.
 
-***Sincronización Eficiente:*** Implementación de mecanismos de sincronización para evitar condiciones de carrera y asegurar la integridad de los datos compartidos.
+***Sincronización Eficiente:*** 
+Implementación de mecanismos de sincronización para evitar condiciones de carrera y asegurar la integridad de los datos compartidos.
 
 ***Estructura del Proyecto***
 main.go: Punto de entrada de la aplicación. Inicia la simulación y coordina las goroutines.
@@ -25,9 +27,9 @@ Go 1.21 o superior.
 
 Fyne: Framework para la interfaz gráfica de usuario.
 
-**go mod tidy**
+<code>go mod tidy</code>
 
-**go run main.go**
+<code>go run main.go</code>
 
 ***Uso***
 Al ejecutar la aplicación, se iniciará la simulación del estacionamiento. La interfaz gráfica mostrará en tiempo real la entrada y salida de vehículos, así como la ocupación actual del estacionamiento.
