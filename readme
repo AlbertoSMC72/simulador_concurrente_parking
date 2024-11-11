@@ -32,5 +32,3 @@ Fyne: Framework para la interfaz gráfica de usuario.
 ***Uso***
 Al ejecutar la aplicación, se iniciará la simulación del estacionamiento. La interfaz gráfica mostrará en tiempo real la entrada y salida de vehículos, así como la ocupación actual del estacionamiento.
 
-***Contribuciones***
-Las contribuciones son bienvenidas. Por favor, abre un issue o envía un pull request con tus mejoras o correcciones
